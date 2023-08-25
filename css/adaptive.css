@@ -1,0 +1,160 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+}
+.section-example {
+  background-color: #eaeaea;
+  height: 150px;
+}
+.conteiner {
+  width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+@media (min-width: 780px) {
+  .conteiner {
+    width: 780px;
+  }
+}
+@media (min-width: 1160px) {
+  .conteiner {
+    width: 1160px;
+  }
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.section-news {
+  padding: 50px 0 60px;
+}
+@media (min-width: 780px) {
+  .section-news {
+    padding: 60px 0;
+  }
+}
+@media (min-width: 1160px) {
+  .section-news {
+    padding: 80px 0;
+  }
+}
+.news-item {
+  width: 290px;
+  margin-bottom: 40px;
+  margin-right: 0;
+}
+.news-item:nth-last-child(2) {
+  margin-bottom: 40px;
+}
+.news-item:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 780px) {
+  .news-item {
+    float: left;
+    width: 360px;
+    margin-bottom: 40px;
+    margin-right: 30px;
+  }
+  .news-item:nth-child(even) {
+    margin-right: 0;
+  }
+  .news-item:last-child,
+  .news-item:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1160px) {
+  .news-item {
+    float: left;
+    width: 260px;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .news-item:last-child {
+    margin-right: 0;
+  }
+  .news-item:nth-child(2) {
+    margin-right: 30px;
+  }
+}
+.title {
+  font-size: 28px;
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #333333;
+}
+@media (min-width: 780px) {
+  .title {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1160px) {
+  .title {
+    font-size: 48px;
+    font-weight: 700;
+  }
+}
+.middle-title {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+@media (min-width: 780px) {
+  .middle-title {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1160px) {
+  .middle-title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+}
+img {
+  width: 290px;
+  height: auto;
+  margin-bottom: 20px;
+}
+@media (min-width: 780px) {
+  img {
+    width: 360px;
+  }
+}
+@media (min-width: 1160px) {
+  img {
+    width: 260px;
+  }
+}
+.text {
+  font-weight: normal;
+  color: #777777;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.7;
+}
+@media (min-width: 780px) {
+  .text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+@media (min-width: 1160px) {
+  .text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+/*# sourceMappingURL=adaptive.css.map */
